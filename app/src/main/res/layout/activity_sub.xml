@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="io.keiji.password.SubActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--アカウント名を記録するエディット-->
+        <EditText
+            android:id="@+id/acc_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+
+        <!--パスワードを表示するテキスト-->
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="id名"
+            android:layout_marginTop="64dp"
+            android:textSize="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="パスワード"
+            android:id="@+id/textView"
+            android:textSize="25sp"
+            android:layout_above="@+id/pass_View"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="password"
+            android:id="@+id/pass_View"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/ok_b1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ONE MORE"
+            android:id="@+id/not_b"
+            android:layout_below="@+id/pass_View"
+            android:layout_toLeftOf="@+id/ok_b1"
+            android:layout_toStartOf="@+id/ok_b1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="get account"
+            android:id="@+id/acc_b"
+            android:layout_below="@+id/acc_edit"
+            android:layout_alignRight="@+id/pass_View"
+            android:layout_alignEnd="@+id/pass_View"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ok"
+            android:id="@+id/ok_b2"
+            android:layout_alignTop="@+id/not_b"
+            android:layout_toRightOf="@+id/ok_b1"
+            android:layout_toEndOf="@+id/ok_b1"/>
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

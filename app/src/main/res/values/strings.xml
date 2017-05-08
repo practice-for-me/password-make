@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Password</string>
+    <string name="title_activity_sub">SubActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>
